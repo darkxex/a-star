@@ -56,21 +56,18 @@ int main(int argc, char** args)
 
         }
 for(int x = 0;x <25;x++)
+
+//add a graphical collision.
 drawcol(x,19,0,255,0,renderer,generator);
 
-//generator.removeCollision({5,19});
+generator.removeCollision({5,19});
 
 
 
     auto path = generator.findPath({0, 0}, {24, 29});
-
-        for(auto& coordinate : path) {
-        //std::cout << coordinate.x << " " << coordinate.y << "\n";
-
-        draw(coordinate.x,coordinate.y,255,255,255,renderer);}
-
-
-        SDL_RenderPresent(renderer);
+    for(auto& coordinate : path) {
+    draw(coordinate.x,coordinate.y,255,255,255,renderer);}
+    SDL_RenderPresent(renderer);
     }
 
     SDL_Quit();
