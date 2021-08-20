@@ -44,8 +44,6 @@ int main(int argc, char** args)
             if (input.type == SDL_QUIT) quit = true;
         }
 
-        //Total number of frames of the animatio
-
         SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
         SDL_RenderClear(renderer);
 
