@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1629433697 source:c:\users\darkx\documents\github\a-star\main.cpp
+1629434112 source:c:\users\darkx\documents\github\a-star\main.cpp
 	<iostream>
 	"source/AStar.hpp"
 	<SDL2/SDL.h>

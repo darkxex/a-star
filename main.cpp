@@ -2,8 +2,8 @@
 #include "source/AStar.hpp"
 #include <SDL2/SDL.h>
 
-#define ancho 25
-#define alto 30
+#define ancho 50
+#define alto 50
 #define bloque 20
 void drawcol(int x, int y, int r,int g,int b,SDL_Renderer* renderer, AStar::Generator& generator){
 
@@ -58,7 +58,7 @@ for(int x = 0;x <25;x++)
 //add a graphical collision.
 drawcol(x,19,0,255,0,renderer,generator);
 
-generator.removeCollision({5,19});
+//generator.removeCollision({5,19});
 
 
 
