@@ -2,8 +2,8 @@
 #include "source/AStar.hpp"
 #include <SDL2/SDL.h>
 
-#define ancho 50
-#define alto 50
+#define ancho 61
+#define alto 34
 #define bloque 20
 void drawcol(int x, int y, int r,int g,int b,SDL_Renderer* renderer, AStar::Generator& generator){
 
