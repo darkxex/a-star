@@ -1,6 +1,7 @@
 #include "AStar.hpp"
 #include <algorithm>
-
+#include "math.h"
+#include <iostream>
 using namespace std::placeholders;
 
 bool AStar::Vec2i::operator == (const Vec2i& coordinates_)
@@ -119,10 +120,23 @@ AStar::CoordinateList AStar::Generator::findPath(Vec2i source_, Vec2i target_)
     }
 
     CoordinateList path;
+
     while (current != nullptr) {
         path.push_back(current->coordinates);
+
         current = current->parent;
+
+
+if (path.at(0).x != target_.x || path.at(0).y != target_.y )
+{
+std::cout <<"path not found"<<std::endl;
+path.clear();
+break;
+}
+
     }
+
+
 
     releaseNodes(openSet);
     releaseNodes(closedSet);
